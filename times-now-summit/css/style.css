@@ -190,11 +190,11 @@ section.banner h1 {
   color: rgba(239, 239, 239, 0.937254902) !important;
 }
 section#more {
-  background-color: #83c6ff;
-  color: #1e1e1e;
+  background-color: #0f0f17;
+  color: #efefef;
 }
 section#more h2 {
-  color: #1e1e1e;
+  color: #83c6ff;
 }
 
 .speaker-card {
