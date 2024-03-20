@@ -76,6 +76,15 @@ nav.navbar {
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
+  .navbar-nav{
+    gap: 1rem;
+    .nav-link{
+      text-transform: uppercase;
+      padding: 0.25rem 0.5rem;
+      line-height: 1;
+      border: 1px solid rgba($color: #efefef, $alpha: 0.2);
+    }
+  }
 }
 
 footer{

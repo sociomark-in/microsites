@@ -81,6 +81,15 @@ nav.navbar {
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
 }
+nav.navbar .navbar-nav {
+  gap: 1rem;
+}
+nav.navbar .navbar-nav .nav-link {
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  border: 1px solid rgba(239, 239, 239, 0.2);
+}
 
 footer {
   background-color: rgba(224, 48, 46, 0.1);
