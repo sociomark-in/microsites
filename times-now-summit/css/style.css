@@ -10,6 +10,10 @@
   font-size: max(1.6vmin, 1.2rem);
 }
 
+.text-red {
+  color: #e0302e !important;
+}
+
 .br-0 {
   border-radius: 0;
 }
