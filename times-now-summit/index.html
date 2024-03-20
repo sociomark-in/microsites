@@ -25,9 +25,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+    <!-- Icons -->
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +43,8 @@
         <nav class="navbar navbar-expand-lg p-md-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="https://placehold.co/150x50" alt="logo">
+                    <!-- <img src="https://placehold.co/150x50" alt="logo"> -->
+                    <img src="assets/images/logo.png" height="50" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,17 +119,20 @@
                     <div class="col-lg-5 col-md-6 col-12">
                         <div class="text-content">
                             <div class="title">
-                                <h6 class="text-uppercase m-0">About</h6>
+                                <h5 class="text-uppercase m-0">About</h5>
                                 <h2>Times Now Summit</h2>
                             </div>
                             <div class="desc">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, repudiandae.
-                                    Optio, at deserunt aliquid eos obcaecati fuga dicta voluptatum animi cum repellendus
-                                    qui ad porro eum assumenda corporis aut quasi accusantium similique libero
-                                    voluptatem distinctio praesentium explicabo aspernatur! Quae quaerat quam odio at
-                                    maiores vero maxime, repudiandae dolore? A, ea.
+                                    At this landmark forum, strategists, policymakers, and influencers accountable for
+                                    India’s future will converge to celebrate the achievements thus far, take stock and
+                                    unearth the direction that the nation will take on Government, Politics, Economy,
+                                    National Security, Health, Diplomacy, Infrastructure, Technology Innovation, and
+                                    other such aspects that would define our future.
                                 </p>
+                                <button class="btn btn-theme-red br-0" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Read More&nbsp;&nbsp;<i
+                                        class="fa-solid fa-expand"></i></button>
                             </div>
                         </div>
                     </div>
@@ -138,18 +148,13 @@
                                 </div>
                                 <div class="desc">
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-                                        repudiandae. Optio, at deserunt aliquid eos obcaecati fuga dicta voluptatum
-                                        animi cum repellendus qui ad porro eum assumenda corporis aut quasi accusantium
-                                        similique libero voluptatem distinctio praesentium explicabo aspernatur! Quae
-                                        quaerat quam odio at maiores vero maxime, repudiandae dolore? A, ea.
+                                        In this edition, furthering the agenda to shape India’s most comprehensive action plan for progress, Times Now Summit puts the spotlight on India: A Vibrant Democracy, Global Bright Spot. At a time when the world is working around a wavering dollar, uncalculated war, constant geopolitical tensions, volatile crude prices and myriad local challenges, India continues to march forward with a historically enviable global respect, exemplary neighbor relations and a buoyant economy. Each State comes together to strengthen the national agenda, thus making the vibrant democracy of India, a global bright spot.
                                     </p>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-                                        repudiandae.Optio, at deserunt aliquid eos obcaecati fuga dicta animi cum
-                                        repellendus qui ad porro eum assumenda corporis aut quasi accusantium similique
-                                        libero voluptatem distinctio praesentium explicabo aspernatur! Quae quaerat quam
-                                        odio at maiores vero maxime, repudiandae dolore? A, ea.
+                                        Government, Policy, Strategic, Geopolitical, Economic stalwarts from home and abroad will converge in
+                                    </p>
+                                    <p>
+                                        <strong>New Delhi</strong> on <strong>26th & 27th January</strong> at the <strong>Times Now Summit</strong>.
                                     </p>
                                 </div>
                             </div>
@@ -163,21 +168,15 @@
                 <div class="row align-items-end flex-row-reverse">
                     <div class="col-12 mb-3">
                         <div class="text-content mb-3 mb-md-5">
-                            <div class="title">
+                            <div class="title text-center">
+                                <h5 class="text-uppercase m-0">Distinguished</h5>
                                 <h2>Keynote Speakers</h2>
-                            </div>
-                            <div class="desc">
-                                <p class="">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi facere iste,
-                                    molestias non velit magnam ullam error alias repellendus laboriosam excepturi vel.
-                                    Aperiam facilis temporibus nemo quisquam corporis! Hic.
-                                </p>
                             </div>
                         </div>
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -189,7 +188,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -201,7 +200,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -213,7 +212,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -225,7 +224,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -237,7 +236,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -249,7 +248,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -261,7 +260,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -273,7 +272,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card">
+                                    <div class="card speaker-card">
                                         <img class="card-image" src="https://placehold.co/300x300" alt="">
                                         <div class="card-body">
                                             <h5>Lorem, ipsum dolor.</h5>
@@ -285,8 +284,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next ico-blue"></div>
-                            <div class="swiper-button-prev ico-blue"></div>
+                            <div class="swiper-button-next ico-red"></div>
+                            <div class="swiper-button-prev ico-red"></div>
                         </div>
                     </div>
                 </div>
@@ -320,7 +319,7 @@
             </script>
         </section>
     </main>
-    <footer class="bg-dark text-white p-3 pb-4">
+    <footer class="text-white p-3 pb-4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-auto col-lg-10 col-12">
@@ -361,6 +360,33 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="title">
+                        <h3>About Times Now Summit</h3>
+                    </div>
+                    <div class="desc">
+                        <p>
+                            At this landmark forum, strategists, policymakers, and influencers accountable for India’s future will converge to celebrate the achievements thus far, stock and unearth the direction that the nation will take on Government, Politics, Economy, National Security, Health, Diplomacy, Infrastructure, Technology Innovation, and other such aspects that would define our future.
+                        </p>
+                        <p>
+                            Earlier editions of Times Now Summit were graced by the Hon’ble PM Shri Narendra Modi; Union Ministers Amit Shah, Nirmala Sitharaman, Ravi Shankar Prasad, Piyush Goyal, Nitin Gadkari, Smriti Irani, as well as influential minds like Peter Zeihan, K Sivan and Sri Sri Ravi Shankar amongst others.
+                        </p>
+                        <p>
+                            For anyone in India who needs to envision, shape and plan for the future, it is vital to anticipate the trajectory of the nation. To seek this clarity in vision of where we are and  where we are headed, across every aspect that is important for shaping the nation, Times Network welcomes you to the Times Now Summit.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

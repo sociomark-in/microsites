@@ -10,6 +10,29 @@
   font-size: max(1.6vmin, 1.2rem);
 }
 
+.br-0 {
+  border-radius: 0;
+}
+
+.btn-theme-red {
+  background-color: #e0302e;
+  color: #efefef;
+}
+.btn-theme-red:hover {
+  background-color: #e0302e;
+  color: #efefef;
+}
+
+.modal h3 {
+  color: #e0302e;
+}
+.modal .modal-content {
+  border: 4px solid #e0302e;
+}
+.modal .modal-content .modal-body {
+  color: #1e1e1e;
+}
+
 section:not(.banner) {
   padding: max(5vmax, 2rem) 0;
 }
@@ -25,7 +48,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #e0302e;
+  color: #efefef;
   font-family: "Acclaim";
 }
 
@@ -46,15 +69,56 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 999;
 }
 
 nav.navbar {
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
+}
+
+footer {
+  background-color: rgba(224, 48, 46, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.swiper {
+  --swiper-navigation-top-offset: 35%;
+  --swiper-navigation-sides-offset: 0;
+}
+.swiper .swiper-button-next:after,
+.swiper .swiper-button-prev:after {
+  display: none;
+}
+.swiper .swiper-button-next {
+  background-size: 90% auto !important;
+}
+.swiper .swiper-button-next.ico-blue {
+  background: url("../assets/icons/next-blue.png") no-repeat;
+}
+.swiper .swiper-button-next.ico-red {
+  background: url("../assets/icons/next-red.png") no-repeat;
+}
+.swiper .swiper-button-next.ico-white {
+  background: url("../assets/icons/next-white.png") no-repeat;
+}
+.swiper .swiper-button-prev {
+  background-size: 90% auto !important;
+}
+.swiper .swiper-button-prev.ico-blue {
+  background: url("../assets/icons/prev-blue.png") no-repeat;
+}
+.swiper .swiper-button-prev.ico-red {
+  background: url("../assets/icons/prev-red.png") no-repeat;
+}
+.swiper .swiper-button-prev.ico-white {
+  background: url("../assets/icons/prev-white.png") no-repeat;
 }
 
 section.banner {
@@ -62,4 +126,16 @@ section.banner {
 }
 section.banner h1 {
   color: #efefef !important;
+}
+
+.speaker-card {
+  background-color: transparent;
+}
+.speaker-card .card-image {
+  margin: 0 2rem;
+  border-radius: 50%;
+  border: 4px solid #e0302e;
+}
+.speaker-card .card-body {
+  color: #efefef;
 }
