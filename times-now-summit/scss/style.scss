@@ -69,7 +69,7 @@ section {
 }
 
 body {
-  background: #000;
+  background: $blue-01;
   font-size: calc(max(1.5vmin, 1.2rem));
   color: #efefef;
 }
@@ -202,7 +202,6 @@ section {
     }
   }
   &#more{
-    background-color: #0f0f17;
     color: #efefef;
     h2{
       color: $blue-02;
