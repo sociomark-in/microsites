@@ -165,13 +165,13 @@ section.fullscreen {
   overflow: hidden;
 }
 section.banner {
-  color: #040407 !important;
+  color: #efefef !important;
   background: #040707 no-repeat;
   background-size: 150% auto;
   background-position: center;
 }
 section.banner h1 {
-  color: #040407 !important;
+  color: rgba(239, 239, 239, 0.937254902) !important;
 }
 section #more {
   padding: max(4vmin, 2rem) 0;
