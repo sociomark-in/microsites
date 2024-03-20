@@ -65,7 +65,7 @@ section:not(.banner, .fullscreen) {
 }
 
 body {
-  background: #01174e;
+  background-color: #01174e;
   font-size: max(1.5vmin, 1.2rem);
   color: #efefef;
 }
@@ -172,10 +172,41 @@ footer {
   background: url("../assets/icons/prev-white.png") no-repeat;
 }
 
+@keyframes spotlight-3-6 {
+  0%, 100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(-65deg);
+  }
+}
 section.fullscreen {
   background-color: #01174e;
   width: 100%;
   overflow: hidden;
+}
+section#about {
+  position: relative;
+  background-color: #01174e;
+  background-attachment: scroll;
+  background-size: auto 90%, cover;
+  background-position: 115% 55%, top;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+section#about .video-sec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+section#about .video-sec video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.banner {
   color: #efefef !important;
@@ -188,10 +219,20 @@ section.banner h1 {
   color: rgba(239, 239, 239, 0.937254902) !important;
 }
 section#more {
+  opacity: 0.8;
   color: #efefef;
+  background: url("../assets/elements/emblem-line-left.png") no-repeat, url("../assets/elements/light-top-left.jpg") no-repeat, #01174e;
+  background-size: auto 66%, contain;
+  background-position: 94% 40%, top left;
+  background-blend-mode: screen, normal;
 }
 section#more h2 {
   color: #83c6ff;
+}
+section#speakers {
+  background: url("../assets/elements/light-bottom-right.jpg") no-repeat;
+  background-size: contain;
+  background-position: bottom right;
 }
 
 .speaker-card {

@@ -15,10 +15,10 @@ $red-01: #e0302e;
   font-size: calc(max(1.6vmin, 1.2rem));
 }
 
-.bg-blue-01{
+.bg-blue-01 {
   background-color: $blue-01 !important;
 }
-.text-red{
+.text-red {
   color: $red-01 !important;
 }
 .br-0 {
@@ -69,7 +69,10 @@ section {
 }
 
 body {
-  background: $blue-01;
+  // background-image: linear-gradient(lighten($blue-01, 10) 1px, transparent 1px),
+  //   linear-gradient(to right, lighten($blue-01, 10) 1px, $blue-01 1px);
+  // background-size: 20px 20px;
+  background-color: $blue-01;
   font-size: calc(max(1.5vmin, 1.2rem));
   color: #efefef;
 }
@@ -89,7 +92,7 @@ h1 {
 h2 {
   font-size: calc(max(3vmax, 3rem));
 }
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
@@ -185,11 +188,43 @@ footer {
   }
 }
 
+@keyframes spotlight-3-6 {
+  0%,
+  100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(-65deg);
+  }
+}
+
 section {
   &.fullscreen {
     background-color: $blue-01;
     width: 100%;
     overflow: hidden;
+  }
+  &#about {
+    position: relative;
+    background-color: $blue-01;
+    background-attachment: scroll;
+    background-size: auto 90%, cover;
+    background-position: 115% 55%, top;
+    background-repeat: no-repeat;
+    z-index: 1;
+    .video-sec {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
   &.banner {
     color: #efefef !important;
@@ -201,11 +236,22 @@ section {
       color: #efefefef !important;
     }
   }
-  &#more{
+  &#more {
+    opacity: 0.8;
     color: #efefef;
-    h2{
+    background: url("../assets/elements/emblem-line-left.png") no-repeat,
+      url("../assets/elements/light-top-left.jpg") no-repeat, $blue-01;
+    background-size: auto 66%, contain;
+    background-position: 94% 40%, top left;
+    background-blend-mode: screen, normal;
+    h2 {
       color: $blue-02;
     }
+  }
+  &#speakers {
+    background: url("../assets/elements/light-bottom-right.jpg") no-repeat;
+    background-size: contain;
+    background-position: bottom right;
   }
 }
 
@@ -217,7 +263,7 @@ section {
     border-radius: 50%;
     border: 4px solid $red-01;
     overflow: hidden;
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -225,10 +271,10 @@ section {
   }
   .card-body {
     color: #efefef;
-    h5{
+    h5 {
       font-size: 1.3rem;
     }
-    p{
+    p {
       text-transform: uppercase;
       opacity: 0.5;
     }
