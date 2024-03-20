@@ -1,6 +1,7 @@
-$blue-01: #1ca4dc;
+// $blue-01: #1ca4dc;
 $blue-01: #01174e;
-$blue-02: #9cc5df;
+// $blue-02: #9cc5df;
+$blue-02: #83c6ff;
 $red-01: #e0302e;
 @font-face {
   font-family: "Bebas Neue", sans-serif;
@@ -180,6 +181,7 @@ footer {
 
 section {
   &.fullscreen {
+    background-color: $blue-01;
     width: 100%;
     overflow: hidden;
   }
