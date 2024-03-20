@@ -143,6 +143,7 @@ footer {
 .swiper.speakersSwiper {
   --swiper-navigation-top-offset: 35%;
   --swiper-navigation-sides-offset: 0;
+  padding: 0 1.82rem;
 }
 .swiper .swiper-button-next:after,
 .swiper .swiper-button-prev:after {
@@ -200,9 +201,16 @@ section#more h2 {
   border: none;
 }
 .speaker-card .card-image {
-  margin: 0 2rem;
+  margin: 0 1rem;
   border-radius: 50%;
   border: 4px solid #9cc5df;
+  overflow: hidden;
+}
+.speaker-card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .speaker-card .card-body {
   color: #efefef;
