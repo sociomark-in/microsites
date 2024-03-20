@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Acclaim";
+  src: url("../assets/fonts/Acclaimregular.ttf");
+}
+
+.text-sm {
+  font-size: calc(max(1.2vmin, 0.8rem));
+}
+.text-lg {
+  font-size: calc(max(1.6vmin, 1.2rem));
+}
+
+section {
+  &:not(.banner) {
+    padding: calc(max(5vmax, 2rem)) 0;
+  }
+}
+
+body {
+  font-size: calc(max(1.5vmin, 1.2rem));
+  color: #efefef;
+  background: url("../assets/backgrounds/intro-bg.jpg") #0b003b;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1,
+h2,
+h3 {
+  color: #e0302e;
+  font-family: "Acclaim";
+}
+h1 {
+  font-size: calc(max(4vmax, 4rem));
+  &.title-font {
+    font-size: calc(max(4vmax, 2rem));
+    text-transform: uppercase;
+  }
+}
+h2 {
+  font-size: calc(max(3vmax, 3rem));
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+nav.navbar {
+  background-color: rgba($color: #1e1e1e, $alpha: 1);
+  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+  --bs-navbar-active-color: #fff;
+}
+
+section {
+  &.banner {
+    color: #efefef !important;
+    h1 {
+      color: #efefef !important;
+    }
+  }
+}
