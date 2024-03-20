@@ -10,6 +10,10 @@
   font-size: max(1.6vmin, 1.2rem);
 }
 
+.bg-blue-01 {
+  background-color: #01174e !important;
+}
+
 .text-red {
   color: #e0302e !important;
 }
@@ -61,7 +65,7 @@ section:not(.banner, .fullscreen) {
 }
 
 body {
-  background: #01174e;
+  background: #000;
   font-size: max(1.5vmin, 1.2rem);
   color: #efefef;
 }
@@ -198,7 +202,7 @@ section#more h2 {
 .speaker-card .card-image {
   margin: 0 1rem;
   border-radius: 50%;
-  border: 4px solid #83c6ff;
+  border: 4px solid #e0302e;
   overflow: hidden;
 }
 .speaker-card .card-image img {
