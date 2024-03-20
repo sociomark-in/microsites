@@ -76,18 +76,41 @@ nav.navbar {
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
-  .navbar-nav{
+  --bs-navitem-border-color: rgba(255, 255, 255, 0.25);
+  .navbar-nav {
     gap: 1rem;
-    .nav-link{
+    .nav-link {
       text-transform: uppercase;
       padding: 0.25rem 0.5rem;
       line-height: 1;
-      border: 1px solid rgba($color: #efefef, $alpha: 0.2);
+    }
+    @media screen and (min-width: 768px) {
+      .nav-link {
+        border: 1px solid var(--bs-navitem-border-color);
+        &:hover{
+          border-color: var(--bs-navbar-color);
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    &:hover, &:active{
+      box-shadow: none;
+    }
+    &[aria-expanded="true"] {
+      .navbar-toggler-icon {
+        background-image: url("../assets/icons/x.svg");
+        filter: contrast(0) brightness(10);
+      }
+    }
+    .navbar-toggler-icon {
+      filter: brightness(10);
     }
   }
 }
 
-footer{
+footer {
   background-color: rgba($color: #e0302e, $alpha: 0.1);
   backdrop-filter: blur(10px);
 }
