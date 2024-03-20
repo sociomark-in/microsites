@@ -94,9 +94,8 @@ header {
   z-index: 999;
 }
 nav.navbar {
-  background-color: rgba($color: #1e1e1e, $alpha: 0.7);
-  backdrop-filter: blur(10px);
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  background-color: #0f0f17;
+  --bs-navbar-color: rgba(255, 255, 255, 0.822);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
@@ -110,9 +109,9 @@ nav.navbar {
     }
     @media screen and (min-width: 768px) {
       .nav-link {
-        border: 1px solid var(--bs-navitem-border-color);
+        // border: 1px solid var(--bs-navitem-border-color);
         &:hover {
-          border-color: var(--bs-navbar-color);
+          // border-color: var(--bs-navbar-color);
         }
       }
     }
@@ -220,5 +219,12 @@ section {
   }
   .card-body {
     color: #efefef;
+    h5{
+      font-size: 1.3rem;
+    }
+    p{
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
   }
 }
