@@ -261,16 +261,11 @@ section {
     // background-image: linear-gradient(lighten($blue-01, 4) 2px, transparent 2px),
     //   linear-gradient(to right, lighten($blue-01, 4) 2px, $blue-01 1px);
     // background-size: 20px 20px;
-    // background: url("../assets/elements/emblem-line-left.png") no-repeat,
-    //   url("../assets/elements/light-bottom-right.jpg") no-repeat, $blue-01;
-    // background-size: auto calc(max(35vmin, 13rem)), contain;
-    // background-position: 2% 40%, bottom right;
-    // background-blend-mode: soft-light, normal;
 
     background: url("../assets/elements/emblem.png") no-repeat,
     url('../assets/elements/rays.png') no-repeat, $blue-01;
     background-size: auto calc(max(35vmin, 13rem)), 50% auto;
-    background-position: 2% 40%, 150% 40%;
+    background-position: -1% 40%, 150% 40%;
     .video-sec {
       position: absolute;
       top: 0;
@@ -299,20 +294,20 @@ section {
     opacity: 0.8;
     color: #efefef;
     background: url("../assets/elements/emblem-flipped.png") no-repeat,
-      url("../assets/elements/light-top-left1.jpg") no-repeat;
-    background-size: auto calc(max(40vmin, 13rem)), 50% auto;
-    background-position: 97% 40%, top left;
+    url('../assets/elements/rays.png') no-repeat, $blue-01;
+    background-size: auto max(40vmin, 13rem), 38% auto;
+    background-position: 97% 40%, -36% 30%;
     background-blend-mode: normal;
     h2 {
       color: $blue-02;
     }
   }
   &#speakers {
-    background: url("../assets/elements/emblem-line-left.png") no-repeat,
-      url("../assets/elements/light-bottom-right.jpg") no-repeat, $blue-01;
-    background-size: auto calc(max(35vmin, 13rem)), contain;
-    background-position: 2% 40%, bottom right;
-    background-blend-mode: soft-light, normal;
+    background: url("../assets/elements/emblem.png") no-repeat,
+      url("../assets/elements/rays-bottom-right.png") no-repeat, $blue-01;
+    background-size: auto calc(max(35vmin, 13rem)), auto 60%;
+    background-position: -2% 40%, bottom right;
+    background-blend-mode: normal;
   }
 }
 .swiper-slide{

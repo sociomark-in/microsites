@@ -248,7 +248,7 @@ section#about {
   z-index: 1;
   background: url("../assets/elements/emblem.png") no-repeat, url("../assets/elements/rays.png") no-repeat, #01174e;
   background-size: auto max(35vmin, 13rem), 50% auto;
-  background-position: 2% 40%, 150% 40%;
+  background-position: -1% 40%, 150% 40%;
 }
 section#about .video-sec {
   position: absolute;
@@ -277,19 +277,19 @@ section.banner h1 {
 section#more {
   opacity: 0.8;
   color: #efefef;
-  background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/light-top-left1.jpg") no-repeat;
-  background-size: auto max(40vmin, 13rem), 50% auto;
-  background-position: 97% 40%, top left;
+  background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/rays.png") no-repeat, #01174e;
+  background-size: auto max(40vmin, 13rem), 38% auto;
+  background-position: 97% 40%, -36% 30%;
   background-blend-mode: normal;
 }
 section#more h2 {
   color: #83c6ff;
 }
 section#speakers {
-  background: url("../assets/elements/emblem-line-left.png") no-repeat, url("../assets/elements/light-bottom-right.jpg") no-repeat, #01174e;
-  background-size: auto max(35vmin, 13rem), contain;
-  background-position: 2% 40%, bottom right;
-  background-blend-mode: soft-light, normal;
+  background: url("../assets/elements/emblem.png") no-repeat, url("../assets/elements/rays-bottom-right.png") no-repeat, #01174e;
+  background-size: auto max(35vmin, 13rem), auto 60%;
+  background-position: -2% 40%, bottom right;
+  background-blend-mode: normal;
 }
 
 .swiper-slide.active img {
