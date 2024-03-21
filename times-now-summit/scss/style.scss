@@ -27,7 +27,7 @@ $red-01: #e0302e;
 .br-0 {
   border-radius: 0;
 }
-.btn{
+.btn {
   padding: 0.7rem 2rem;
 }
 .btn-theme-red {
@@ -70,7 +70,8 @@ $red-01: #e0302e;
 }
 
 section {
-  &:not(.banner), &:not(.fullscreen) {
+  &:not(.banner),
+  &:not(.fullscreen) {
     padding: calc(max(5vmax, 2rem)) 0;
   }
 }
@@ -174,8 +175,8 @@ nav.navbar {
   }
 }
 
-nav{
-  .nav-pills{
+.nav-pills {
+  .nav-link {
     color: #efefef;
   }
 }
@@ -259,12 +260,14 @@ section {
     background-color: $blue-01;
     background-attachment: scroll;
     z-index: 1;
-    background-image: linear-gradient(
-        lighten($blue-01, 4) 2px,
-        transparent 2px
-      ),
+    background-image: linear-gradient(lighten($blue-01, 4) 2px, transparent 2px),
       linear-gradient(to right, lighten($blue-01, 4) 2px, $blue-01 1px);
     background-size: 20px 20px;
+    // background: url("../assets/elements/emblem-line-left.png") no-repeat,
+    //   url("../assets/elements/light-bottom-right.jpg") no-repeat, $blue-01;
+    // background-size: auto calc(max(35vmin, 13rem)), contain;
+    // background-position: 2% 40%, bottom right;
+    // background-blend-mode: soft-light, normal;
     .video-sec {
       position: absolute;
       top: 0;
@@ -293,7 +296,7 @@ section {
     opacity: 0.8;
     color: #efefef;
     background: url("../assets/elements/emblem-line-right.png") no-repeat,
-      url("../assets/elements/light-top-left.jpg") no-repeat, $blue-01;
+      url("../assets/elements/light-top-left1.jpg") no-repeat, $blue-01;
     background-size: auto calc(max(40vmin, 13rem)), contain;
     background-position: 97% 40%, top left;
     background-blend-mode: soft-light, normal;
@@ -313,7 +316,7 @@ section {
 .speaker-card {
   background-color: transparent;
   border: none;
-  .card-body{
+  .card-body {
     padding: 1rem 0;
   }
   .card-image {
