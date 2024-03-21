@@ -431,23 +431,32 @@
                         nextEl: ".speakersSwiper .swiper-button-next",
                         prevEl: ".speakersSwiper .swiper-button-prev",
                     },
+                    loop: true,
+                    autoplay: {
+                        delay: 1000,
+                        disableOnInteraction: false,
+                        enabled: true
+                    },
                     slidesPerView: 1,
                     spaceBetween: 30,
-                    // loop: true,
-                    // autoplay: {
-                    //     delay: 1000,
-                    //     disableOnInteraction: false,
-                    // },
                     breakpoints: {
                         640: {
                             slidesPerView: 2,
                             spaceBetween: 20,
                         },
                         768: {
+                            loop: true,
+                            autoplay: {
+                                enabled: false
+                            },
                             slidesPerView: 3,
                             spaceBetween: 20,
                         },
                         1024: {
+                            loop: false,
+                            autoplay: {
+                                enabled: false
+                            },
                             slidesPerView: 4,
                             spaceBetween: 30,
                         },
