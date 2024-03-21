@@ -78,33 +78,13 @@
     </header>
     <main>
         <section class="fullscreen">
-            <div class="swiper bannerSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="assets/images/banner_1900x1000_h.jpg"
-                                type="image/jpg">
-                            <source media="(min-width: 1080px)" srcset="assets/images/banner_1900x1000_h.jpg"
-                                type="image/jpg">
-                            <img src="https://placehold.co/800x1000" alt="" class="w-100">
-                        </picture>
-                    </div>
-                </div>
-                <div class="swiper-button-next ico-blue"></div>
-                <div class="swiper-button-prev ico-blue"></div>
-            </div>
-            <script>
-                var swiper = new Swiper(".bannerSwiper", {
-                    navigation: {
-                        nextEl: ".bannerSwiper .swiper-button-next",
-                        prevEl: ".bannerSwiper .swiper-button-prev",
-                    },
-                    autoplay: {
-                        loop: true,
-                        duration: 300
-                    }
-                })
-            </script>
+            <picture>
+                <source media="(min-width: 768px)" srcset="assets/images/banner_1900x1000_h.jpg"
+                    type="image/jpg">
+                <source media="(min-width: 1080px)" srcset="assets/images/banner_1900x1000_h.jpg"
+                    type="image/jpg">
+                <img src="https://placehold.co/800x1000" alt="" class="w-100">
+            </picture>
         </section>
         <section class="banner d-none">
             <div class="">
@@ -495,31 +475,41 @@
                             <div class="col">
                                 <div class="p-3 text-center">
                                     <p class="mb-1 text-sm">An Initiative By</p>
-                                    <img loading="lazy" src="assets/logos/times-influence.svg" height="35" alt="">
+                                    <a href="" target="_blank">
+                                        <img loading="lazy" src="assets/logos/times-influence.svg" height="35" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="p-3 text-center">
                                     <p class="mb-1 text-sm">Powered By</p>
-                                    <img loading="lazy" src="assets/logos//pernod-ricard.svg" height="35" alt="">
+                                    <a href="https://www.pernod-ricard.com/en/locations/india" target="_blank">
+                                        <img loading="lazy" src="assets/logos//pernod-ricard.svg" height="35" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="p-3 text-center">
                                     <p class="mb-1 text-sm">Driven by</p>
-                                    <img loading="lazy" src="assets/logos/maruti-suzuki.svg" height="35" alt="">
+                                    <a href="https://www.marutisuzuki.com/" target="_blank">
+                                        <img loading="lazy" src="assets/logos/maruti-suzuki.svg" height="35" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="p-3 text-center">
                                     <p class="mb-1 text-sm">Co-Powered By</p>
-                                    <img loading="lazy" src="assets/logos/dreamsports.svg" height="25" alt="">
+                                    <a href="https://www.dreamsports.group/" target="_blank">
+                                        <img loading="lazy" src="assets/logos/dreamsports.svg" height="25" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="p-3 text-center">
                                     <p class="mb-1 text-sm">Associate Partner</p>
-                                    <img loading="lazy" src="assets/logos/lic.svg" height="35" alt="">
+                                    <a href="https://licindia.in/" target="_blank">
+                                        <img loading="lazy" src="assets/logos/lic.svg" height="35" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <!-- <div class="col-auto">
