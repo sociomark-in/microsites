@@ -302,6 +302,9 @@ section {
 .speaker-card {
   background-color: transparent;
   border: none;
+  .card-body{
+    padding: 1rem 0;
+  }
   .card-image {
     margin: 0 1rem;
     border-radius: 50%;
@@ -319,7 +322,7 @@ section {
       font-size: 1.3rem;
     }
     p {
-      text-transform: uppercase;
+      text-transform: capitalize;
       opacity: 0.5;
     }
   }

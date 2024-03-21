@@ -30,6 +30,9 @@
     </script>
     <!-- Icons -->
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -79,10 +82,8 @@
     <main>
         <section class="fullscreen">
             <picture>
-                <source media="(min-width: 768px)" srcset="assets/images/banner_1900x1000_h.jpg"
-                    type="image/jpg">
-                <source media="(min-width: 1080px)" srcset="assets/images/banner_1900x1000_h.jpg"
-                    type="image/jpg">
+                <source media="(min-width: 768px)" srcset="assets/images/banner_1900x1000_h.jpg" type="image/jpg">
+                <source media="(min-width: 1080px)" srcset="assets/images/banner_1900x1000_h.jpg" type="image/jpg">
                 <img src="https://placehold.co/800x1000" alt="" class="w-100">
             </picture>
         </section>
@@ -127,11 +128,11 @@
                     <div class="col-lg-5 col-md-6 col-12 mb-md-0 mb-3">
                         <div class="text-content">
                             <div class="title">
-                                <h5 class="text-uppercase m-0">About</h5>
+                                <h5 class="text-uppercase m-0" data-aos="fade-down">About</h5>
                                 <h2 class="text-red">Times Now Summit</h2>
                             </div>
                             <div class="desc">
-                                <p>
+                                <p data-aos="fade-right">
                                     At this landmark forum, strategists, policymakers, and influencers accountable for
                                     India’s future will converge to celebrate the achievements thus far, take stock and
                                     unearth the direction that the nation will take on Government, Politics, Economy,
@@ -157,8 +158,15 @@
                                     <h2 class="text-red">Times Now Summit 2024</h2>
                                 </div>
                                 <div class="desc">
-                                    <p>
-                                        Amidst astronomical growth and an unwavering trajectory of development across various sectors, India has firmly established itself as a force to be reckoned with. Despite facing diverse challenges including geopolitical uncertainties, economic hurdles, population dynamics, and internal complexities, India has emerged as a beacon of resilience and leadership. As we convene at the Times Now Summit, our focus is to unravel the essence of India's ascent as a global powerhouse, exploring the boundless potential encapsulated in the theme: <strong class="text-theme-blue">INDIA UNSTOPPABLE</strong>.
+                                    <p data-aos="fade-right">
+                                        Amidst astronomical growth and an unwavering trajectory of development across
+                                        various sectors, India has firmly established itself as a force to be reckoned
+                                        with. Despite facing diverse challenges including geopolitical uncertainties,
+                                        economic hurdles, population dynamics, and internal complexities, India has
+                                        emerged as a beacon of resilience and leadership. As we convene at the Times Now
+                                        Summit, our focus is to unravel the essence of India's ascent as a global
+                                        powerhouse, exploring the boundless potential encapsulated in the theme: <strong
+                                            class="text-theme-blue">INDIA UNSTOPPABLE</strong>.
                                     </p>
                                     <!-- <p>
                                         Government, Policy, Strategic, Geopolitical, Economic stalwarts from home and
@@ -195,7 +203,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5>Nirmala Sitharaman</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Minister of Finance, India
                                             </p>
                                         </div>
@@ -204,11 +212,12 @@
                                 <div class="swiper-slide">
                                     <div class="card speaker-card">
                                         <div class="card-image">
-                                            <img loading="lazy" src="assets/images/speakers/Hardeep Singh Puri TNS24.jpg" alt="">
+                                            <img loading="lazy"
+                                                src="assets/images/speakers/Hardeep Singh Puri TNS24.jpg" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h5>Hardeep Singh Puri</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Minister of Petroleum & Natural Gas and Minister of Housing & Urban
                                                 Affairs, India
                                             </p>
@@ -218,11 +227,11 @@
                                 <div class="swiper-slide">
                                     <div class="card speaker-card">
                                         <div class="card-image">
-                                            <img loading="lazy" src="https://placehold.co/300x300" alt="">
+                                            <img loading="lazy" src="assets/images/speakers/Smriti Irani TNS24.jpg" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h5>Smriti Irani</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Minister of Women and Child Development, India
                                             </p>
                                         </div>
@@ -236,14 +245,14 @@
                                         </div>
                                         <div class="card-body">
                                             <h5>Anurag Thakur</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Minister of Sports, Youth Affairs and Minister of Information and
                                                 Broadcasting, India
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide d-none">
                                     <div class="card speaker-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="assets/images/speakers/Ashwini Vaishnaw TNS24.jpg"
@@ -251,20 +260,20 @@
                                         </div>
                                         <div class="card-body">
                                             <h5>Ashwini Vaishnaw</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Minister of Electronics & IT and Railways & Communication, India
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="swiper-slide">
                                     <div class="card speaker-card">
                                         <div class="card-image">
-                                            <img loading="lazy" src="https://placehold.co/300x300" alt="">
+                                            <img loading="lazy" src="assets/images/speakers/Bill Gates TNS24.jpg" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h5>Bill Gates</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Co-Chair
                                             </p>
                                         </div>
@@ -278,7 +287,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5>Arvind Panagariya</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Chairperson, Finance Commission, India
                                             </p>
                                         </div>
@@ -291,7 +300,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5>Krishnamurthy Subramanian</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Executive Director For India, IMF
                                             </p>
                                         </div>
@@ -305,25 +314,25 @@
                                         </div>
                                         <div class="card-body">
                                             <h5>General Manoj Pande </h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Chief of Army Staff, India
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide d-none">
                                     <div class="card speaker-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://placehold.co/300x300" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h5>Amitabh Kant</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 G20 Sherpa of India
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="swiper-slide">
                                     <div class="card speaker-card">
                                         <div class="card-image">
@@ -331,26 +340,26 @@
                                         </div>
                                         <div class="card-body">
                                             <h5>Vinai Kumar Saxena</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Lieutenant Governor of Delhi
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide d-none">
                                     <div class="card speaker-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://placehold.co/300x300" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h5>Vikrant Massey</h5>
-                                            <p class="text-sm">
+                                            <p class="">
                                                 Actor
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide d-none">
                                     <div class="card speaker-card">
                                         <div class="card-image">
                                             <img loading="lazy"
@@ -364,7 +373,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide d-none">
                                     <div class="card speaker-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="assets/images/speakers/Ravneet Pawha TNS24.jpg"
@@ -378,7 +387,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide d-none">
                                     <div class="card speaker-card">
                                         <div class="card-image">
                                             <img loading="lazy"
@@ -392,7 +401,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide d-none">
                                     <div class="card speaker-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://placehold.co/300x300" alt="">
@@ -404,7 +413,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                             </div>
                             <div class="swiper-button-next ico-white"></div>
@@ -424,6 +433,11 @@
                     },
                     slidesPerView: 1,
                     spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 1000,
+                        disableOnInteraction: false,
+                    },
                     breakpoints: {
                         640: {
                             slidesPerView: 2,
@@ -434,7 +448,7 @@
                             spaceBetween: 20,
                         },
                         1024: {
-                            slidesPerView: 5,
+                            slidesPerView: 4,
                             spaceBetween: 30,
                         },
                     },
@@ -557,18 +571,28 @@
                         <h3>About Times Now Summit</h3>
                     </div>
                     <div class="desc">
-                        
-                        
+
+
                         <p>
-                            At this landmark forum, strategists, policymakers, and influencers accountable for India’s future will converge to celebrate the achievements thus far, take stock and unearth the direction that the nation will take on Government, Politics, Economy, National Security, Health, Diplomacy, Infrastructure, Technology Innovation, and other such aspects that would define our future.
+                            At this landmark forum, strategists, policymakers, and influencers accountable for India’s
+                            future will converge to celebrate the achievements thus far, take stock and unearth the
+                            direction that the nation will take on Government, Politics, Economy, National Security,
+                            Health, Diplomacy, Infrastructure, Technology Innovation, and other such aspects that would
+                            define our future.
                         </p>
                         <p>
-                            Earlier editions of Times Now Summit were graced by the Hon’ble PM Shri Narendra Modi; Union Ministers Amit Shah, Nirmala Sitharaman, Ravi Shankar Prasad, Piyush Goyal, Nitin Gadkari, Smriti Irani, as well as influential minds like Peter Zeihan, K Sivan and Sri Sri Ravi Shankar amongst others. 
+                            Earlier editions of Times Now Summit were graced by the Hon’ble PM Shri Narendra Modi; Union
+                            Ministers Amit Shah, Nirmala Sitharaman, Ravi Shankar Prasad, Piyush Goyal, Nitin Gadkari,
+                            Smriti Irani, as well as influential minds like Peter Zeihan, K Sivan and Sri Sri Ravi
+                            Shankar amongst others.
                         </p>
                         <p>
-                            For anyone in India who needs to envision, shape and plan for the future, it is vital to anticipate the trajectory of the nation. To seek this clarity in vision of where we are and where we are headed, across every aspect that is important for shaping the nation, Times Network welcomes you to the Times Now Summit.
+                            For anyone in India who needs to envision, shape and plan for the future, it is vital to
+                            anticipate the trajectory of the nation. To seek this clarity in vision of where we are and
+                            where we are headed, across every aspect that is important for shaping the nation, Times
+                            Network welcomes you to the Times Now Summit.
                         </p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -577,6 +601,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init(
+            {
+                disable: 'mobile',
+                duration: 1500,
+            }
+        );
+    </script>
 </body>
 
 </html>

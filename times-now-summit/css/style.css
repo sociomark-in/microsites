@@ -287,6 +287,9 @@ section#speakers {
   background-color: transparent;
   border: none;
 }
+.speaker-card .card-body {
+  padding: 1rem 0;
+}
 .speaker-card .card-image {
   margin: 0 1rem;
   border-radius: 50%;
@@ -306,6 +309,6 @@ section#speakers {
   font-size: 1.3rem;
 }
 .speaker-card .card-body p {
-  text-transform: uppercase;
+  text-transform: capitalize;
   opacity: 0.5;
 }
