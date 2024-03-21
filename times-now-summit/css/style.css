@@ -277,10 +277,10 @@ section.banner h1 {
 section#more {
   opacity: 0.8;
   color: #efefef;
-  background: url("../assets/elements/emblem-line-right.png") no-repeat, url("../assets/elements/light-top-left1.jpg") no-repeat, #01174e;
+  background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/light-top-left1.jpg") no-repeat;
   background-size: auto max(40vmin, 13rem), 50% auto;
   background-position: 97% 40%, top left;
-  background-blend-mode: soft-light, normal;
+  background-blend-mode: normal;
 }
 section#more h2 {
   color: #83c6ff;
