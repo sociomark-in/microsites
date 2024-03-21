@@ -30,6 +30,12 @@ $red-01: #e0302e;
 .btn {
   padding: 0.7rem 2rem;
 }
+@media screen and (min-width:768px) {
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
 .btn-theme-red {
   background-color: $red-01;
   color: #efefef;
