@@ -26,6 +26,10 @@
   border-radius: 0;
 }
 
+.btn {
+  padding: 0.7rem 2rem;
+}
+
 .btn-theme-red {
   background-color: #e0302e;
   color: #efefef;
@@ -49,8 +53,8 @@
   color: #1e1e1e;
 }
 .btn-white:hover {
-  background-color: #efefef;
-  color: #1e1e1e;
+  background-color: #e0302e;
+  color: #efefef;
 }
 
 .modal h3 {
@@ -61,6 +65,7 @@
   border: 4px solid #01174e;
 }
 .modal .modal-content .modal-body {
+  padding: 1rem;
   color: #1e1e1e;
 }
 
