@@ -278,7 +278,7 @@ section#more {
   opacity: 0.8;
   color: #efefef;
   background: url("../assets/elements/emblem-line-right.png") no-repeat, url("../assets/elements/light-top-left1.jpg") no-repeat, #01174e;
-  background-size: auto max(40vmin, 13rem), contain;
+  background-size: auto max(40vmin, 13rem), 50% auto;
   background-position: 97% 40%, top left;
   background-blend-mode: soft-light, normal;
 }
