@@ -245,11 +245,10 @@ section.fullscreen img {
 }
 section#about {
   position: relative;
-  background-color: #01174e;
-  background-attachment: scroll;
   z-index: 1;
-  background-image: linear-gradient(#011d62 2px, transparent 2px), linear-gradient(to right, #011d62 2px, #01174e 1px);
-  background-size: 20px 20px;
+  background: url("../assets/elements/emblem.png") no-repeat, url("../assets/elements/rays.png") no-repeat, #01174e;
+  background-size: auto max(35vmin, 13rem), 50% auto;
+  background-position: 2% 40%, 150% 40%;
 }
 section#about .video-sec {
   position: absolute;
@@ -293,12 +292,19 @@ section#speakers {
   background-blend-mode: soft-light, normal;
 }
 
+.swiper-slide.active img {
+  filter: grayscale(0);
+}
+
 .speaker-card {
   background-color: transparent;
   border: none;
 }
 .speaker-card .card-body {
   padding: 1rem 0;
+}
+.speaker-card:hover .card-image img {
+  filter: grayscale(0);
 }
 .speaker-card .card-image {
   margin: 0 1rem;
@@ -311,6 +317,7 @@ section#speakers {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: grayscale(1);
 }
 .speaker-card .card-body {
   color: #efefef;
