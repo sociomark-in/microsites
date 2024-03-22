@@ -146,9 +146,9 @@
                                 <button class="btn btn-white br-0" data-bs-toggle="modal"
                                     data-bs-target="#readMoreModal">Read More&nbsp;&nbsp;<i
                                         class="fa-solid fa-expand"></i></button>
-                                <button class="btn btn-white br-0" data-bs-toggle="modal"
+                                <!-- <button class="btn btn-white br-0" data-bs-toggle="modal"
                                     data-bs-target="#goLiveModal">Live&nbsp;&nbsp;<i
-                                        class="fa-solid fa-expand"></i></button>
+                                        class="fa-solid fa-expand"></i></button> -->
                             </div>
                         </div>
                     </div>
@@ -860,9 +860,7 @@
                         </div>
                     </div>
                     <script>
-                        console.log((new Date().getTime() / 1000) + (86400 * 2) + 1);
-                        console.log(new Date("2024-03-27T10:00:00.000Z").getTime());
-                        new FlipDown((new Date("2024-03-27T10:00:00.000Z").getTime()), "eventStart").start();
+                        new FlipDown((new Date("2024-03-27T10:00:00.000Z").getTime() / 1000), "eventStart").start();
                     </script>
                 </div>
             </div>
