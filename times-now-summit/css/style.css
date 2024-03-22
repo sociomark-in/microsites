@@ -303,6 +303,22 @@ nav.navbar .navbar-toggler .navbar-toggler-icon {
   bottom: 12rem;
 }
 
+#goLiveModal .modal-content {
+  background-color: transparent;
+  border: none;
+}
+#goLiveModal .modal-content .modal-header {
+  border: none;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+#goLiveModal .modal-content .modal-header .btn-close {
+  filter: contrast(0) brightness(20);
+}
+#goLiveModal .modal-content .modal-body {
+  padding: 0;
+}
+
 footer {
   background-color: #000;
   -webkit-backdrop-filter: blur(10px);
