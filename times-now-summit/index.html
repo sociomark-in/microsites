@@ -374,8 +374,8 @@
                                 <div class="swiper-slide">
                                     <div class="card speaker-card">
                                         <div class="card-image">
-                                            <!-- <img loading="lazy" src="assets/images/speakers/M Sankaran TNS24.jpg" alt=""> -->
-                                            <img loading="lazy" src="https://placehold.co/300x300" alt="">
+                                            <img loading="lazy" src="assets/images/speakers/M Sankaran TNS24.jpg" alt="">
+                                            <!-- <img loading="lazy" src="https://placehold.co/300x300" alt=""> -->
                                         </div>
                                         <div class="card-body">
                                             <h5>M Sankaran</h5>
@@ -738,8 +738,8 @@
                             </div>
                             <div class="col-auto">
                                 <div class="p-3 text-center">
+                                    <p class="mb-1 text-sm">Education Partner</p>
                                     <a href="https://www.amrita.edu/" target="_blank">
-                                        <p class="mb-1 text-sm">Education Partner</p>
                                         <img loading="lazy" src="assets/logos/aamrita1.svg" height="30" alt="">
                                     </a>
                                 </div>
@@ -853,7 +853,11 @@
                 <div class="modal-body">
                     <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
                     <link rel="stylesheet" href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css">
-                    <div class="row justify-content-center"></div>
+                    <div class="my-4">
+                        <div class="p-3">
+                            <div id="eventStart" class="flipdown"></div>
+                        </div>
+                    </div>
                     <script>
                         new FlipDown((new Date().getTime() / 1000) + (86400 * 2) + 1, "eventStart").start();
                     </script>
