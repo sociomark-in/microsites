@@ -37,6 +37,14 @@ $red-01: #e0302e;
   }
 }
 
+.btn-youtube {
+  background-color: red;
+  color: #efefef;
+  &:hover {
+    background-color: red;
+    color: #efefef;
+  }
+}
 .btn-theme-red {
   background-color: $red-01;
   color: #efefef;
@@ -295,6 +303,16 @@ nav.navbar {
 .floating{
   position: fixed;
   z-index: 999;
+  .btn-youtube{
+    padding: 0.5rem;
+    text-align: center;
+    i{
+      font-size: 2rem;
+    }
+    span{
+      display: block;
+    }
+  }
   &.floating-center-right{
     right: 0;
     left: unset;
@@ -302,6 +320,19 @@ nav.navbar {
     bottom: unset;
     transform: translateY(-50%);
   }
+  &.floating-top-right{
+    right: 0;
+    left: unset;
+    top: 10rem;
+    bottom: unset;
+  }
+  &.floating-bottom-right{
+    right: 0;
+    left: unset;
+    top: unset;
+    bottom: 12rem;
+  }
+  
 }
 
 footer {

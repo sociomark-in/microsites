@@ -35,6 +35,15 @@
     padding: 0.5rem 1rem;
   }
 }
+.btn-youtube {
+  background-color: red;
+  color: #efefef;
+}
+.btn-youtube:hover {
+  background-color: red;
+  color: #efefef;
+}
+
 .btn-theme-red {
   background-color: #e0302e;
   color: #efefef;
@@ -264,12 +273,34 @@ nav.navbar .navbar-toggler .navbar-toggler-icon {
   position: fixed;
   z-index: 999;
 }
+.floating .btn-youtube {
+  padding: 0.5rem;
+  text-align: center;
+}
+.floating .btn-youtube i {
+  font-size: 2rem;
+}
+.floating .btn-youtube span {
+  display: block;
+}
 .floating.floating-center-right {
   right: 0;
   left: unset;
   top: 50%;
   bottom: unset;
   transform: translateY(-50%);
+}
+.floating.floating-top-right {
+  right: 0;
+  left: unset;
+  top: 10rem;
+  bottom: unset;
+}
+.floating.floating-bottom-right {
+  right: 0;
+  left: unset;
+  top: unset;
+  bottom: 12rem;
 }
 
 footer {
