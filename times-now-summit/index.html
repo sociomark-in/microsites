@@ -146,9 +146,9 @@
                                 <button class="btn btn-white br-0" data-bs-toggle="modal"
                                     data-bs-target="#readMoreModal">Read More&nbsp;&nbsp;<i
                                         class="fa-solid fa-expand"></i></button>
-                                <!-- <button class="btn btn-white br-0" data-bs-toggle="modal"
+                                <button class="btn btn-white br-0" data-bs-toggle="modal"
                                     data-bs-target="#goLiveModal">Live&nbsp;&nbsp;<i
-                                        class="fa-solid fa-expand"></i></button> -->
+                                        class="fa-solid fa-expand"></i></button>
                             </div>
                         </div>
                     </div>
@@ -704,8 +704,8 @@
         <div class="bg-white text-dark mb-3" id="partners">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 col-12">
-                        <div class="row justify-content-center">
+                    <div class="col-xl-11 col-12">
+                        <div class="row justify-content-lg-between justify-content-center">
                             <div class="col-auto">
                                 <div class="p-3 text-center">
                                     <p class="mb-1 text-sm">An Initiative By</p>
@@ -750,7 +750,7 @@
                                 <div class="p-3 text-center">
                                     <p class="mb-1 text-sm">Associate Partner</p>
                                     <a href="https://licindia.in/" target="_blank">
-                                        <img loading="lazy" src="assets/logos/lic.svg" height="45" alt="" style="margin-top: 1px;">
+                                        <img loading="lazy" src="assets/logos/lic.svg" height="45" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -860,7 +860,9 @@
                         </div>
                     </div>
                     <script>
-                        new FlipDown((new Date().getTime() / 1000) + (86400 * 2) + 1, "eventStart").start();
+                        console.log((new Date().getTime() / 1000) + (86400 * 2) + 1);
+                        console.log(new Date("2024-03-27T10:00:00.000Z").getTime());
+                        new FlipDown((new Date("2024-03-27T10:00:00.000Z").getTime()), "eventStart").start();
                     </script>
                 </div>
             </div>
