@@ -415,13 +415,13 @@ section {
 @media screen and (min-width: 768px) {
   section {
     &.fullscreen{
-      height: calc(100vh - 100px);
-      display: flex;
-      justify-content: center;
-      img{
-        height: 100%;
-        width: auto;
-      }
+      // height: calc(100vh - 100px);
+      // display: flex;
+      // justify-content: center;
+      // img{
+      //   height: 100%;
+      //   width: auto;
+      // }
     }
     &#about {
       background: url("../assets/elements/emblem-flipped.png") no-repeat,
