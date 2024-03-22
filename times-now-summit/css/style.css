@@ -373,15 +373,6 @@ section#speakers {
 }
 
 @media screen and (min-width: 768px) {
-  section.fullscreen {
-    height: calc(100vh - 100px);
-    display: flex;
-    justify-content: center;
-  }
-  section.fullscreen img {
-    height: 100%;
-    width: auto;
-  }
   section#about {
     background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/rays.png") no-repeat, #031952;
     background-size: auto max(35vmin, 13rem), 50% auto;
