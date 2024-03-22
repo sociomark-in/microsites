@@ -11,7 +11,7 @@
 }
 
 .bg-blue-01 {
-  background-color: #01174e !important;
+  background-color: #031952 !important;
 }
 
 .text-red {
@@ -45,11 +45,11 @@
 }
 
 .btn-theme-blue {
-  background-color: #01174e;
+  background-color: #031952;
   color: #efefef;
 }
 .btn-theme-blue:hover {
-  background-color: #01174e;
+  background-color: #031952;
   color: #efefef;
 }
 
@@ -64,10 +64,10 @@
 
 .modal h3 {
   font-size: max(2vmax, 2.5rem);
-  color: #01174e;
+  color: #031952;
 }
 .modal .modal-content {
-  border: 4px solid #01174e;
+  border: 4px solid #031952;
 }
 .modal .modal-content .modal-body {
   padding: 1rem;
@@ -109,7 +109,7 @@ section:not(.banner), section:not(.fullscreen) {
   }
 }
 body {
-  background-color: #01174e;
+  background-color: #031952;
   font-size: max(1.5vmin, 1.2rem);
   color: #efefef;
   z-index: -3;
@@ -304,7 +304,7 @@ footer {
   }
 }
 section.fullscreen {
-  background-color: #01174e;
+  background-color: #031952;
   width: 100%;
   padding: 0;
   height: auto;
@@ -327,7 +327,7 @@ section.fullscreen img {
 section#about {
   position: relative;
   z-index: 1;
-  background: url("../assets/elements/rays-bottom-right.png") no-repeat, #01174e;
+  background: url("../assets/elements/rays-bottom-right.png") no-repeat, #031952;
   background-size: auto 40%;
   background-position: 0% 115%;
 }
@@ -357,7 +357,7 @@ section.banner h1 {
 }
 section#more {
   color: #efefef;
-  background: url("../assets/elements/rays-top-left.png") no-repeat, #01174e;
+  background: url("../assets/elements/rays-top-left.png") no-repeat, #031952;
   background-size: auto 38%;
   background-position: top left;
   background-blend-mode: normal;
@@ -366,7 +366,7 @@ section#more h2 {
   color: #83c6ff;
 }
 section#speakers {
-  background: url("../assets/elements/rays-top-right.png") no-repeat, #01174e;
+  background: url("../assets/elements/rays-top-right.png") no-repeat, #031952;
   background-size: auto 60%;
   background-position: top 120%;
   background-blend-mode: normal;
@@ -383,18 +383,18 @@ section#speakers {
     width: auto;
   }
   section#about {
-    background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/rays.png") no-repeat, #01174e;
+    background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/rays.png") no-repeat, #031952;
     background-size: auto max(35vmin, 13rem), 50% auto;
     background-position: 1% 40%, 150% 40%;
   }
   section#speakers {
-    background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/rays-bottom-right.png") no-repeat, #01174e;
+    background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/rays-bottom-right.png") no-repeat, #031952;
     background-size: auto max(35vmin, 13rem), auto 70%;
     background-position: 1% 40%, 110% 120%;
     background-blend-mode: normal;
   }
   section#more {
-    background: url("../assets/elements/emblem.png") no-repeat, url("../assets/elements/rays-flipped.png") no-repeat, #01174e;
+    background: url("../assets/elements/emblem.png") no-repeat, url("../assets/elements/rays-flipped.png") no-repeat, #031952;
     background-size: auto max(40vmin, 13rem), 40% auto;
     background-position: 97% 40%, -30% 65%;
     background-blend-mode: normal;
