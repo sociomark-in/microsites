@@ -61,6 +61,15 @@ $red-01: #e0302e;
     color: #efefef;
   }
 }
+.btn-big{
+  // border-radius: 0.3rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  span{
+    animation: blink 1s linear infinite;
+  }
+}
 
 .modal {
   h3 {
@@ -81,6 +90,16 @@ section {
   &:not(.fullscreen) {
     padding: calc(max(5vmax, 2rem)) 0;
   }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  
 }
 
 @keyframes sf-fly-by-1 {
@@ -118,19 +137,6 @@ body {
   background-color: $blue-01;
   font-size: calc(max(1.5vmin, 1.2rem));
   color: #efefef;
-
-  z-index: -3;
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #000;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-  }
 }
 
 .star-field {
@@ -283,6 +289,18 @@ nav.navbar {
 .nav-pills {
   .nav-link {
     color: #efefef;
+  }
+}
+
+.floating{
+  position: fixed;
+  z-index: 999;
+  &.floating-center-right{
+    right: 0;
+    left: unset;
+    top: 50%;
+    bottom: unset;
+    transform: translateY(-50%);
   }
 }
 

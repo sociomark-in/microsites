@@ -114,19 +114,23 @@
                 </div>
             </div>
         </section>
-        <div class="bg-white py-3">
-            <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
-            <link rel="stylesheet" href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css">
-            <link rel="stylesheet" href="css/countdown.min.css">
-            <div class="row justify-content-center mb-4">
-                <div class="col-auto">
-                    <h3 class="text-red text-center">We will be live in</h3>
-                    <div id="eventStart" class="flipdown"></div>
+        <div class="row m-0 g-0">
+            <div class="col-12">
+                <div class="bg-white py-3">
+                    <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
+                    <link rel="stylesheet" href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css">
+                    <link rel="stylesheet" href="css/countdown.min.css">
+                    <div class="row m-0 justify-content-center mb-4">
+                        <div class="col-auto">
+                            <h2 class="text-red text-center">live in</h2>
+                            <div id="eventStart" class="flipdown"></div>
+                        </div>
+                    </div>
+                    <script>
+                        new FlipDown((new Date("2024-03-27T10:00:00.000Z").getTime() / 1000), "eventStart").start();
+                    </script>
                 </div>
             </div>
-            <script>
-                new FlipDown((new Date("2024-03-27T10:00:00.000Z").getTime() / 1000), "eventStart").start();
-            </script>
         </div>
         <section id="about">
             <div class="container mb-3 mb-md-5">
@@ -158,9 +162,7 @@
                                 <button class="btn btn-white br-0" data-bs-toggle="modal"
                                     data-bs-target="#readMoreModal">Read More&nbsp;&nbsp;<i
                                         class="fa-solid fa-expand"></i></button>
-                                <button class="btn btn-theme-red br-0" data-bs-toggle="modal"
-                                    data-bs-target="#goLiveModal">Live&nbsp;&nbsp;<i
-                                        class="fa-brands fa-youtube"></i></button>
+
                             </div>
                         </div>
                     </div>
@@ -243,6 +245,19 @@
                                 <div class="swiper-slide">
                                     <div class="card speaker-card">
                                         <div class="card-image">
+                                            <img src="assets/images/speakers/Bill Gates TNS24.jpg" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Bill Gates</h5>
+                                            <p class="">
+                                                Co-Chair, Bill & Melinda Gates Foundation
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card speaker-card">
+                                        <div class="card-image">
                                             <img src="assets/images/speakers/Smriti Irani TNS24.jpg" alt="">
                                         </div>
                                         <div class="card-body">
@@ -304,19 +319,6 @@
                                             <p class="">
                                                 Minister of Sports, Youth Affairs and Minister of Information and
                                                 Broadcasting
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card speaker-card">
-                                        <div class="card-image">
-                                            <img src="assets/images/speakers/Bill Gates TNS24.jpg" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5>Bill Gates</h5>
-                                            <p class="">
-                                                Co-Chair, Bill & Melinda Gates Foundation
                                             </p>
                                         </div>
                                     </div>
@@ -842,10 +844,20 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
+                    <div class="ratio ratio-16x9">
+                        <iframe class="w-100 ratio16x9"
+                            src="https://www.youtube.com/embed/_76xSbe7xiM?si=jmd_hiwes2z2hj_G"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="floating floating-center-right d-none">
+        <button class="btn btn-theme-red btn-big br-0" data-bs-toggle="modal" data-bs-target="#goLiveModal"><i
+                class="fa-brands fa-youtube"></i>&nbsp;&nbsp;<span>Live</span></button>
     </div>
 
 
