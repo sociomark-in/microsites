@@ -2,6 +2,21 @@
                                     <div class="card speaker-card">
                                         <div class="card-image">
                                             <img src="https://placehold.co/300x300" alt="">
+                                            <!-- <img src="assets/images/speakers/J P Nadda TNS24.jpg" alt=""> -->
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>J P Nadda</h5>
+                                            <p class="">
+                                                National President, BJP
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+<div class="swiper-slide">
+                                    <div class="card speaker-card">
+                                        <div class="card-image">
+                                            <img src="https://placehold.co/300x300" alt="">
                                             <!-- <img src="assets/images/speakers/Kamal Haasan TNS24.jpg" alt=""> -->
                                         </div>
                                         <div class="card-body">

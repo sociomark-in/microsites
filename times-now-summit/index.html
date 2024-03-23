@@ -318,20 +318,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card speaker-card">
-                                        <div class="card-image">
-                                            <img src="https://placehold.co/300x300" alt="">
-                                            <!-- <img src="assets/images/speakers/J P Nadda TNS24.jpg" alt=""> -->
-                                        </div>
-                                        <div class="card-body">
-                                            <h5>J P Nadda</h5>
-                                            <p class="">
-                                                National President, BJP
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 <div class="swiper-slide">
                                     <div class="card speaker-card">
                                         <div class="card-image">
@@ -575,7 +562,8 @@
                                 <div class="swiper-slide">
                                     <div class="card speaker-card">
                                         <div class="card-image">
-                                            <img src="assets/images/speakers/Mithali Raj TNS24.jpg" alt="">
+                                            <img src="https://placehold.co/300x300" alt="">
+                                            <!-- <img src="assets/images/speakers/Mithali Raj TNS24.jpg" alt=""> -->
                                         </div>
                                         <div class="card-body">
                                             <h5>Mithali Raj</h5>
@@ -665,6 +653,20 @@
                                             <h5>Kabita Singh</h5>
                                             <p class="">
                                                 Winner of National Creators Award 2024
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card speaker-card">
+                                        <div class="card-image">
+                                            <!-- <img src="https://placehold.co/300x300" alt=""> -->
+                                            <img src="assets/images/speakers/Balakrishnan Shankar TNS24.jpg" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Dr. Balakrishnan Shankar</h5>
+                                            <p class="">
+                                                Dean Engineering, Amrita Viswa Vidyapeetham
                                             </p>
                                         </div>
                                     </div>
@@ -884,37 +886,42 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
-                    <script>
-                        const day1s = new Date('2024-03-27 09:00:00');
-                        const day1e = new Date('2024-03-27 23:00:00');
-                        const day2s = new Date('2024-03-28 09:00:00');
-                        const day2e = new Date('2024-03-28 23:00:00');
 
-                        const today = new Date();
-                        if (today >= day1s && today <= day1e) {
-                            // Day 1
-                            console.log("Day 1");
-                            $("#liveVideo").attr("src", "https://www.youtube.com/embed/syFhDQVNtWU?si=PrwYRjAkAaLRK7do")
-                        }
-                        else if (today >= day2s && today <= day2e) {
-                            // Day 1
-                            console.log("Day 2");
-                            $("#liveVideo").attr("src", "https://www.youtube.com/embed/uzoQBVRPZKY?si=6Zq3hkOsKf1YQnqO")
-                        } else {
-                            console.log("Offline");
-                            $("#liveVideo").attr("src", "https://www.youtube.com/embed/_76xSbe7xiM?si=jmd_hiwes2z2hj_G")
-                        }
-                    </script>
                 </div>
             </div>
         </div>
     </div>
-    <div class="floating floating-center-right ">
+    <div class="floating floating-center-right" id="floatingWidget">
         <button class="btn btn-youtube btn-big br-0" data-bs-toggle="modal" data-bs-target="#goLiveModal"><i
                 class="fa-brands fa-youtube"></i><span>Live</span></button>
     </div>
 
+    <script>
+        // const day1s = new Date('2024-03-27 09:00:00');
+        // const day1e = new Date('2024-03-27 23:00:00');
+        // const day2s = new Date('2024-03-28 09:00:00');
+        // const day2e = new Date('2024-03-28 23:00:00');
+        const day1s = new Date('2024-03-23 17:51:00');
+        const day1e = new Date('2024-03-23 17:52:00');
+        const day2s = new Date('2024-03-23 17:52:00');
+        const day2e = new Date('2024-03-23 17:53:00');
 
+        const today = new Date();
+        if (today >= day1s && today <= day1e) {
+            // Day 1
+            console.log("Day 1");
+            $("#liveVideo").attr("src", "https://www.youtube.com/embed/syFhDQVNtWU?si=PrwYRjAkAaLRK7do")
+        }
+        else if (today >= day2s && today <= day2e) {
+            // Day 1
+            console.log("Day 2");
+            $("#liveVideo").attr("src", "https://www.youtube.com/embed/uzoQBVRPZKY?si=6Zq3hkOsKf1YQnqO")
+        } else {
+            console.log("Offline");
+            $("#liveVideo").attr("src", "https://www.youtube.com/embed/_76xSbe7xiM?si=jmd_hiwes2z2hj_G")
+            // $("#floatingWidget").css('display', 'none');
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
