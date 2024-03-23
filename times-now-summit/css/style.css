@@ -274,21 +274,22 @@ nav.navbar .navbar-toggler .navbar-toggler-icon {
   z-index: 999;
 }
 .floating .btn-youtube {
-  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
   text-align: center;
 }
-.floating .btn-youtube i {
-  font-size: 2rem;
-}
 .floating .btn-youtube span {
-  display: block;
+  line-height: 1;
 }
 .floating.floating-center-right {
   right: 0;
   left: unset;
   top: 50%;
   bottom: unset;
-  transform: translateY(-50%);
+  transform-origin: top center;
+  transform: rotate(-90deg) translate(0, calc(-50% + 2rem));
 }
 .floating.floating-top-right {
   right: 0;
@@ -333,6 +334,9 @@ footer {
 .swiper .swiper-button-next:after,
 .swiper .swiper-button-prev:after {
   display: none;
+}
+.swiper .swiper-button-disabled {
+  opacity: 0;
 }
 .swiper .swiper-button-next {
   background-size: 90% auto !important;
@@ -466,9 +470,6 @@ section#speakers {
 .speaker-card .card-body {
   padding: 1rem 0;
 }
-.speaker-card:hover .card-image img {
-  filter: grayscale(0);
-}
 .speaker-card .card-image {
   margin: 0 1rem;
   border-radius: 50%;
@@ -480,7 +481,6 @@ section#speakers {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(1);
 }
 .speaker-card .card-body {
   color: #efefef;
