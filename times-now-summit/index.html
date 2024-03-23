@@ -897,17 +897,17 @@
     </div>
 
     <script>
-        // const day1s = new Date('2024-03-27 09:00:00');
-        // const day1e = new Date('2024-03-27 23:00:00');
-        // const day2s = new Date('2024-03-28 09:00:00');
-        // const day2e = new Date('2024-03-28 23:00:00');
-        const day1s = new Date('2024-03-23 17:51:00');
-        const day1e = new Date('2024-03-23 17:52:00');
-        const day2s = new Date('2024-03-23 17:52:00');
-        const day2e = new Date('2024-03-23 17:53:00');
+        const day1s = new Date('2024-03-27 09:00:00');
+        const day1e = new Date('2024-03-27 23:00:00');
+        const day2s = new Date('2024-03-28 09:00:00');
+        const day2e = new Date('2024-03-28 23:00:00');
+        // const day1s = new Date('2024-03-23 18:23:00');
+        // const day1e = new Date('2024-03-23 18:24:00');
+        // const day2s = new Date('2024-03-23 18:24:00');
+        // const day2e = new Date('2024-03-23 18:25:00');
 
         const today = new Date();
-        if (today >= day1s && today <= day1e) {
+        if (today <= day1e) {
             // Day 1
             console.log("Day 1");
             $("#liveVideo").attr("src", "https://www.youtube.com/embed/syFhDQVNtWU?si=PrwYRjAkAaLRK7do")
