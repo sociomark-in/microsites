@@ -35,9 +35,26 @@
     padding: 0.5rem 1rem;
   }
 }
+.btn-youtube-theme {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: red;
+  color: #efefef;
+}
+.btn-youtube-theme h4 {
+  font-size: max(5vmin, 2.5rem);
+  margin-bottom: 0;
+}
+.btn-youtube-theme:hover {
+  background-color: red;
+  color: #efefef;
+}
+
 .btn-youtube {
   background-color: red;
   color: #efefef;
+}
+.btn-youtube span {
+  animation: blink 1s linear infinite;
 }
 .btn-youtube:hover {
   background-color: red;
@@ -75,9 +92,6 @@
   padding: 0.7rem 1.5rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-}
-.btn-big span {
-  animation: blink 1s linear infinite;
 }
 
 .modal h3 {
@@ -318,6 +332,14 @@ nav.navbar .navbar-toggler .navbar-toggler-icon {
 }
 #goLiveModal .modal-content .modal-body {
   padding: 0;
+}
+
+#liveConsole {
+  display: none;
+}
+
+#liveConsole.active {
+  display: block;
 }
 
 footer {

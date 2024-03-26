@@ -37,9 +37,25 @@ $red-01: #e0302e;
   }
 }
 
+.btn-youtube-theme {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: red;
+  h4 {
+    font-size: calc(max(5vmin, 2.5rem));
+    margin-bottom: 0;
+  }
+  color: #efefef;
+  &:hover {
+    background-color: red;
+    color: #efefef;
+  }
+}
 .btn-youtube {
   background-color: red;
   color: #efefef;
+  span {
+    animation: blink 1s linear infinite;
+  }
   &:hover {
     background-color: red;
     color: #efefef;
@@ -74,9 +90,6 @@ $red-01: #e0302e;
   padding: 0.7rem 1.5rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  span {
-    animation: blink 1s linear infinite;
-  }
 }
 
 .modal {
@@ -309,7 +322,7 @@ nav.navbar {
     gap: 0.5rem;
     padding: 0.5rem 1rem;
     text-align: center;
-    span{
+    span {
       line-height: 1;
     }
   }
@@ -319,7 +332,7 @@ nav.navbar {
     top: 50%;
     bottom: unset;
     transform-origin: top center;
-  transform: rotate(-90deg) translate(0, calc(-50% + 2rem));;
+    transform: rotate(-90deg) translate(0, calc(-50% + 2rem));
   }
   &.floating-top-right {
     right: 0;
@@ -346,12 +359,18 @@ nav.navbar {
         filter: contrast(0) brightness(20);
       }
     }
-    .modal-body{
+    .modal-body {
       padding: 0;
     }
   }
 }
+#liveConsole {
+  display: none;
+}
 
+#liveConsole.active {
+  display: block;
+}
 footer {
   background-color: #000;
   backdrop-filter: blur(10px);
@@ -370,7 +389,7 @@ footer {
       display: none;
     }
   }
-  .swiper-button-disabled{
+  .swiper-button-disabled {
     opacity: 0;
   }
   .swiper-button-next {
