@@ -41,7 +41,7 @@ $red-01: #e0302e;
   font-family: "Bebas Neue", sans-serif;
   background-color: red;
   h4 {
-    font-size: calc(max(5vmin, 2.5rem));
+    font-size: calc(max(4.5vmin, 2.3rem));
     margin-bottom: 0;
   }
   color: #efefef;
@@ -573,7 +573,6 @@ section {
       font-size: 1.3rem;
     }
     p {
-      text-transform: capitalize;
       opacity: 0.5;
     }
   }
