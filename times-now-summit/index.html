@@ -74,7 +74,7 @@
                             <a class="nav-link" href="#partners">Partners</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true" href="#agenda">Agenda</a>
+                            <a class="nav-link" href="Agenda Summit 2024_Day 1.pdf" target="_blank">Agenda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mailto:timesnowsummit@timesgroup.com">Contact&nbsp;Us</a>
@@ -119,7 +119,9 @@
                         <div class="col-xl-9 col-md-10 col-12">
                             <div class="row justify-content-center" id="liveBtn">
                                 <div class="col-auto my-3">
-                                    <button class="btn btn-youtube-theme btn-big br-0 mx-auto"><h4><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;<span>Watch Live</span></h4></button>
+                                    <button class="btn btn-youtube-theme btn-big br-0 mx-auto">
+                                        <h4><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;<span>Watch Live</span></h4>
+                                    </button>
                                 </div>
                             </div>
                             <div id="liveConsole">
@@ -131,17 +133,17 @@
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 allowfullscreen></iframe>
-                                            </div>
                                         </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="ratio ratio-16x9">
-                                                <iframe class="w-100 ratio16x9"
-                                                    src="https://www.youtube.com/embed/uzoQBVRPZKY?si=6Zq3hkOsKf1YQnqO"
-                                                    title="YouTube video player" frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen></iframe>
-                                            </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe class="w-100 ratio16x9"
+                                                src="https://www.youtube.com/embed/uzoQBVRPZKY?si=6Zq3hkOsKf1YQnqO"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +282,7 @@
                                         <div class="card-body">
                                             <h5>Piyush Goyal</h5>
                                             <p class="">
-                                                Minister of Commerce & Industry And Textiles, Consumer Affairs, Food And
+                                                Minister of Commerce & Industry and Textiles, Consumer Affairs, Food and
                                                 Public Distribution
                                             </p>
                                         </div>
@@ -308,7 +310,7 @@
                                         <div class="card-body">
                                             <h5>Ashwini Vaishnaw</h5>
                                             <p class="">
-                                                Minister of Electronics & IT And Railways & Communication
+                                                Minister of Electronics & IT and Railways & Communication
                                             </p>
                                         </div>
                                     </div>
@@ -417,7 +419,7 @@
                                         <div class="card-body">
                                             <h5>Kangana Ranaut</h5>
                                             <p class="">
-                                                Actor & Loksabha Candidate BJP
+                                                Actor & Lok Sabha Candidate BJP
                                             </p>
                                         </div>
                                     </div>
@@ -707,7 +709,7 @@
                                         <div class="card-body">
                                             <h5>Yannick Colaco</h5>
                                             <p class="">
-                                                Co-Founder, Fancode
+                                                Co-Founder, FanCode
                                             </p>
                                         </div>
                                     </div>
@@ -1135,13 +1137,13 @@
         let day1e = new Date('2024-03-27 23:00:00');
         let day2s = new Date('2024-03-28 09:00:00');
         let day2e = new Date('2024-03-28 23:00:00');
-        
+
         // let day1s = new Date('2024-03-26 19:50:00');
         // let day1e = new Date('2024-03-26 19:59:00');
         // let day2s = new Date('2024-03-26 19:59:00');
         // let day2e = new Date('2024-03-26 20:10:00');
 
-        new FlipDown((moment("2024-03-26T19:50:00").valueOf() / 1000), "eventStart").start();
+        new FlipDown((moment("2024-03-27T09:00:00").valueOf() / 1000), "eventStart").start();
         let today = new Date();
         $("#liveBtn").on('click', () => {
             $("#liveConsole").toggleClass('active');
@@ -1153,7 +1155,7 @@
         } else {
             $("#liveBtn").css('display', 'none');
             if (today <= day1e) {
-            } else{
+            } else {
                 $("#eventStartConsole").css('display', 'none');
                 $("#liveConsole").addClass('active');
             }

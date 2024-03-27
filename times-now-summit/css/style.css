@@ -41,7 +41,7 @@
   color: #efefef;
 }
 .btn-youtube-theme h4 {
-  font-size: max(5vmin, 2.5rem);
+  font-size: max(4.5vmin, 2.3rem);
   margin-bottom: 0;
 }
 .btn-youtube-theme:hover {
@@ -511,6 +511,5 @@ section#speakers {
   font-size: 1.3rem;
 }
 .speaker-card .card-body p {
-  text-transform: capitalize;
   opacity: 0.5;
 }
