@@ -126,7 +126,7 @@
                             </div>
                             <div id="liveConsole">
                                 <div class="row">
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-12 mb-3 mb-md-0">
                                         <div class="ratio ratio-16x9">
                                             <iframe class="w-100 ratio16x9"
                                                 src="https://www.youtube.com/embed/syFhDQVNtWU?si=PrwYRjAkAaLRK7do"
@@ -135,7 +135,7 @@
                                                 allowfullscreen></iframe>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-12 mb-3 mb-md-0">
                                         <div class="ratio ratio-16x9">
                                             <iframe class="w-100 ratio16x9"
                                                 src="https://www.youtube.com/embed/uzoQBVRPZKY?si=6Zq3hkOsKf1YQnqO"
@@ -1149,14 +1149,14 @@
         })
         if (today >= day1s && today <= day2e) {
             $("#liveBtn").css('display', 'flex');
-            $("#liveConsole").addClass('active');
+            // $("#liveConsole").addClass('active');
             $("#eventStartConsole").css('display', 'none');
         } else {
             $("#liveBtn").css('display', 'none');
             if (today <= day1e) {
             } else {
                 $("#eventStartConsole").css('display', 'none');
-                $("#liveConsole").addClass('active');
+               $("#liveConsole").addClass('active');
             }
         }
         // if (today <= day1e) {
