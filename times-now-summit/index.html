@@ -1133,7 +1133,7 @@
     </div>
 
     <script>
-        let day1s = new Date('2024-03-27 09:00:00');
+        let day1s = new Date('2024-03-27 09:55:00');
         let day1e = new Date('2024-03-27 23:00:00');
         let day2s = new Date('2024-03-28 09:00:00');
         let day2e = new Date('2024-03-28 23:00:00');
@@ -1143,7 +1143,7 @@
         // let day2s = new Date('2024-03-26 19:59:00');
         // let day2e = new Date('2024-03-26 20:10:00');
 
-        new FlipDown((moment("2024-03-27T09:00:00").valueOf() / 1000), "eventStart").start();
+        new FlipDown((moment("2024-03-27T09:55:00").valueOf() / 1000), "eventStart").start();
         let today = new Date();
         $("#liveBtn").on('click', () => {
             $("#liveConsole").toggleClass('active');
