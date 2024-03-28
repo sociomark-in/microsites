@@ -308,8 +308,19 @@ nav.navbar {
 }
 
 .nav-pills {
-  .nav-link {
-    color: #efefef;
+  gap: 1rem;
+  .nav-item {
+    .nav-link {
+      background-color: transparent;
+      border: 1px solid #efefef;
+      color: #efefef;
+      padding: 0.5rem 1rem;
+      border-radius: 0;
+      &.active {
+        background-color: #efefef;
+        color: #1e1e1e;
+      }
+    }
   }
 }
 
@@ -367,10 +378,10 @@ nav.navbar {
 #liveConsole {
   display: none;
 }
-
 #liveConsole.active {
   display: block;
 }
+
 footer {
   background-color: #000;
   backdrop-filter: blur(10px);
@@ -542,6 +553,7 @@ section {
     }
   }
 }
+
 .speaker-card {
   background-color: transparent;
   border: none;
@@ -577,3 +589,45 @@ section {
     }
   }
 }
+
+/* Gallery Section */
+.gallery-masonry {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  // columns: 2;
+  // img {
+  // 	width: 100%;
+  // 	object-fit: contain;
+  // }
+
+  // a {
+  // 	width: 100%;
+  //   display: block;
+  // 	overflow: hidden;
+  //   margin-bottom: 1rem;
+  // 	border-radius: 1rem;
+  // }
+  a {
+    width: calc(250px - 0.5rem);
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+// @media screen and (min-width: 512px) {
+// 	.gallery-masonry {
+// 		columns: 3;
+// 	}
+// }
+// @media screen and (min-width: 1440px) {
+// 	.gallery-masonry {
+// 		columns: 4;
+// 	}
+// }

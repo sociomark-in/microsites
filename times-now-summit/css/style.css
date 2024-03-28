@@ -279,8 +279,19 @@ nav.navbar .navbar-toggler .navbar-toggler-icon {
   filter: brightness(10);
 }
 
-.nav-pills .nav-link {
+.nav-pills {
+  gap: 1rem;
+}
+.nav-pills .nav-item .nav-link {
+  background-color: transparent;
+  border: 1px solid #efefef;
   color: #efefef;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+}
+.nav-pills .nav-item .nav-link.active {
+  background-color: #efefef;
+  color: #1e1e1e;
 }
 
 .floating {
@@ -512,4 +523,23 @@ section#speakers {
 }
 .speaker-card .card-body p {
   opacity: 0.5;
+}
+
+/* Gallery Section */
+.gallery-masonry {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.gallery-masonry a {
+  width: calc(250px - 0.5rem);
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+.gallery-masonry a img {
+  width: 100%;
+  height: auto;
 }
