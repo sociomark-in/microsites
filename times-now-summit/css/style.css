@@ -466,6 +466,12 @@ section#more {
 section#more h2 {
   color: #83c6ff;
 }
+section#playlist {
+  background: url("../assets/elements/rays-top-left.png") no-repeat, #031952;
+  background-size: auto 38%;
+  background-position: top left;
+  background-blend-mode: normal;
+}
 section#speakers {
   background: url("../assets/elements/rays-top-right.png") no-repeat, #031952;
   background-size: auto 60%;
@@ -486,6 +492,12 @@ section#speakers {
     background-blend-mode: normal;
   }
   section#more {
+    background: url("../assets/elements/emblem.png") no-repeat, url("../assets/elements/rays-flipped.png") no-repeat, #031952;
+    background-size: auto max(40vmin, 13rem), 40% auto;
+    background-position: 97% 40%, -30% 65%;
+    background-blend-mode: normal;
+  }
+  section#playlist {
     background: url("../assets/elements/emblem.png") no-repeat, url("../assets/elements/rays-flipped.png") no-repeat, #031952;
     background-size: auto max(40vmin, 13rem), 40% auto;
     background-position: 97% 40%, -30% 65%;

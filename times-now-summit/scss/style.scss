@@ -504,6 +504,12 @@ section {
       color: $blue-02;
     }
   }
+  &#playlist {
+    background: url("../assets/elements/rays-top-left.png") no-repeat, $blue-01;
+    background-size: auto 38%;
+    background-position: top left;
+    background-blend-mode: normal;
+  }
   &#speakers {
     background: url("../assets/elements/rays-top-right.png") no-repeat, $blue-01;
     background-size: auto 60%;
@@ -537,6 +543,13 @@ section {
       background-blend-mode: normal;
     }
     &#more {
+      background: url("../assets/elements/emblem.png") no-repeat,
+        url("../assets/elements/rays-flipped.png") no-repeat, $blue-01;
+      background-size: auto max(40vmin, 13rem), 40% auto;
+      background-position: 97% 40%, -30% 65%;
+      background-blend-mode: normal;
+    }
+    &#playlist {
       background: url("../assets/elements/emblem.png") no-repeat,
         url("../assets/elements/rays-flipped.png") no-repeat, $blue-01;
       background-size: auto max(40vmin, 13rem), 40% auto;
