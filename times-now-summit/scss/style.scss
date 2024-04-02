@@ -543,11 +543,15 @@ section {
       background-attachment: fixed;
     }
     &#speakers {
+      // background: url("../assets/elements/emblem-flipped.png") no-repeat,
+      //   url("../assets/elements/rays-bottom-right.png") no-repeat, $blue-01;
+      // background-size: auto max(35vmin, 13rem), auto 70%;
+      // background-position: 1% 40%, 110% 120%;
+      // background-blend-mode: normal;
       background: url("../assets/elements/emblem-flipped.png") no-repeat,
-        url("../assets/elements/rays-bottom-right.png") no-repeat, $blue-01;
-      background-size: auto max(35vmin, 13rem), auto 70%;
-      background-position: 1% 40%, 110% 120%;
-      background-blend-mode: normal;
+        url("../assets/elements/rays.png") no-repeat, $blue-01;
+      background-size: auto calc(max(35vmin, 13rem)), 50% auto;
+      background-position: 1% 40%, 150% 40%;
     }
     &#more {
       background: url("../assets/elements/emblem.png") no-repeat,
