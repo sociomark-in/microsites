@@ -485,6 +485,12 @@ section#speakers {
     background-size: auto max(35vmin, 13rem), 50% auto;
     background-position: 1% 40%, 150% 40%;
   }
+  section#gallery {
+    background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/rays.png") no-repeat, #031952;
+    background-size: auto max(35vmin, 13rem), 50% auto;
+    background-position: 1% 40%, 150% 40%;
+    background-attachment: fixed;
+  }
   section#speakers {
     background: url("../assets/elements/emblem-flipped.png") no-repeat, url("../assets/elements/rays-bottom-right.png") no-repeat, #031952;
     background-size: auto max(35vmin, 13rem), auto 70%;
