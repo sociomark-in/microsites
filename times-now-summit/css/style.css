@@ -543,6 +543,21 @@ section#speakers {
 }
 
 /* Gallery Section */
+.gallery a {
+  width: calc(250px - 0.5rem);
+  display: block;
+  overflow: hidden;
+  border-radius: 1rem;
+  filter: grayscale(1);
+}
+.gallery a:hover {
+  filter: grayscale(0);
+}
+.gallery a img {
+  width: 100%;
+  height: auto;
+}
+
 .gallery-masonry {
   width: 100%;
   display: flex;
@@ -551,13 +566,5 @@ section#speakers {
   gap: 1rem;
 }
 .gallery-masonry a {
-  width: calc(250px - 0.5rem);
-  display: block;
-  overflow: hidden;
   margin-bottom: 1rem;
-  border-radius: 1rem;
-}
-.gallery-masonry a img {
-  width: 100%;
-  height: auto;
 }
