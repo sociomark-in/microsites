@@ -548,10 +548,10 @@ section#speakers {
   display: block;
   overflow: hidden;
   border-radius: 1rem;
-  filter: grayscale(1);
+  filter: brightness(0.6);
 }
 .gallery a:hover {
-  filter: grayscale(0);
+  filter: brightness(1);
 }
 .gallery a img {
   width: 100%;
