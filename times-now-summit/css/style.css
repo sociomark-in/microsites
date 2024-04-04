@@ -548,7 +548,7 @@ section#speakers {
   display: block;
   overflow: hidden;
   border-radius: 1rem;
-  filter: brightness(0.6);
+  filter: brightness(0.9);
 }
 .gallery a:hover {
   filter: brightness(1);
