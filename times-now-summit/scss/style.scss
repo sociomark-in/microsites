@@ -542,6 +542,13 @@ section {
       background-position: 1% 40%, 150% 40%;
       background-attachment: fixed;
     }
+    &#impact {
+      background: url("../assets/elements/emblem-flipped.png") no-repeat,
+      url("../assets/elements/rays.png") no-repeat, $blue-01;
+      background-size: auto calc(max(35vmin, 13rem)), 50% auto;
+      background-position: 1% 40%, 150% 40%;
+      background-attachment: fixed;
+    }
     &#speakers {
       // background: url("../assets/elements/emblem-flipped.png") no-repeat,
       //   url("../assets/elements/rays-bottom-right.png") no-repeat, $blue-01;
