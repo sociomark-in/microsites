@@ -70,11 +70,11 @@ $red-01: #e0302e;
   }
 }
 .btn-theme-blue {
-  background-color: $blue-01;
-  color: #efefef;
+  background-color: $blue-02;
+  color: #1e1e1e;
   &:hover {
-    background-color: $blue-01;
-    color: #efefef;
+    background-color: $blue-02;
+    color: #1e1e1e;
   }
 }
 .btn-white {
@@ -537,14 +537,14 @@ section {
     }
     &#gallery {
       background: url("../assets/elements/emblem-flipped.png") no-repeat,
-      url("../assets/elements/rays.png") no-repeat, $blue-01;
+        url("../assets/elements/rays.png") no-repeat, $blue-01;
       background-size: auto calc(max(35vmin, 13rem)), 50% auto;
       background-position: 1% 40%, 150% 40%;
       background-attachment: fixed;
     }
     &#impact {
       background: url("../assets/elements/emblem-flipped.png") no-repeat,
-      url("../assets/elements/rays.png") no-repeat, $blue-01;
+        url("../assets/elements/rays.png") no-repeat, $blue-01;
       background-size: auto calc(max(35vmin, 13rem)), 50% auto;
       background-position: 1% 40%, 150% 40%;
       background-attachment: fixed;
@@ -573,6 +573,11 @@ section {
       background-size: auto max(40vmin, 13rem), 40% auto;
       background-position: 97% 40%, -30% 65%;
       background-blend-mode: normal;
+    }
+    &#articles {
+      background: url("../assets/elements/typo.png"), $blue-01;
+      background-size: auto 100px;
+      background-blend-mode: soft-light;
     }
   }
 }
@@ -622,15 +627,24 @@ section {
 }
 
 /* Gallery Section */
-.gallery{
-  a{
+.gallery-thumb {
+  overflow: hidden;
+  border-radius: 1rem;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.gallery {
+  a {
     width: calc(250px - 0.5rem);
     display: block;
     overflow: hidden;
     border-radius: 1rem;
     filter: brightness(0.9);
     // filter: grayscale(1);
-    &:hover{
+    &:hover {
       filter: brightness(1);
       // filter: grayscale(0);
     }
@@ -652,8 +666,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  a{
+  a {
     margin-bottom: 1rem;
   }
-  
 }

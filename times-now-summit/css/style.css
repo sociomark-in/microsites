@@ -71,12 +71,12 @@
 }
 
 .btn-theme-blue {
-  background-color: #031952;
-  color: #efefef;
+  background-color: #83c6ff;
+  color: #1e1e1e;
 }
 .btn-theme-blue:hover {
-  background-color: #031952;
-  color: #efefef;
+  background-color: #83c6ff;
+  color: #1e1e1e;
 }
 
 .btn-white {
@@ -514,6 +514,11 @@ section#speakers {
     background-position: 97% 40%, -30% 65%;
     background-blend-mode: normal;
   }
+  section#articles {
+    background: url("../assets/elements/typo.png"), #031952;
+    background-size: auto 100px;
+    background-blend-mode: soft-light;
+  }
 }
 .swiper-slide.active img {
   filter: grayscale(0);
@@ -549,6 +554,17 @@ section#speakers {
 }
 
 /* Gallery Section */
+.gallery-thumb {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.gallery-thumb img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .gallery a {
   width: calc(250px - 0.5rem);
   display: block;
