@@ -88,6 +88,15 @@
   color: #efefef;
 }
 
+.btn-text-theme-blue {
+  background-color: transparent;
+  color: #efefef;
+  border-bottom: 1px solid #83c6ff;
+}
+.btn-text-theme-blue:hover {
+  border-bottom: 2px solid #83c6ff;
+}
+
 .btn-big {
   padding: 0.7rem 1.5rem;
   font-size: 1.2rem;
@@ -557,12 +566,21 @@ section#speakers {
 .gallery-thumb {
   overflow: hidden;
   border-radius: 1rem;
+  box-shadow: 0 0 0 6px #031952, 0 0 0 9px #cfcfcf;
 }
 .gallery-thumb img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.gallery_title {
+  font-size: 0.9rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .gallery a {

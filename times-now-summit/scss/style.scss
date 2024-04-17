@@ -85,6 +85,16 @@ $red-01: #e0302e;
     color: #efefef;
   }
 }
+
+.btn-text-theme-blue{
+  background-color: transparent;
+  color: #efefef;
+  border-bottom: 1px solid $blue-02;
+  &:hover{
+    border-bottom: 2px solid $blue-02;
+  }
+}
+
 .btn-big {
   // border-radius: 0.3rem;
   padding: 0.7rem 1.5rem;
@@ -630,11 +640,19 @@ section {
 .gallery-thumb {
   overflow: hidden;
   border-radius: 1rem;
+  box-shadow: 0 0 0 6px $blue-01, 0 0 0 9px #cfcfcf;
   img{
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
+}
+.gallery_title{
+  font-size: 0.9rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
 }
 .gallery {
   a {
