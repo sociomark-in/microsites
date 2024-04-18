@@ -969,45 +969,28 @@
                 </div>
             </div>
         </section>
-        <section id="impact" class="">
-            <div class="container-lg">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 col-12">
-                        <div class="title text-center mb-3 mb-md-4">
-                            <!-- <h5 class="text-uppercase m-0">Times Now Summit 2024</h5> -->
-                            <h2 class="text-red">Impact</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-lg-8 col-md-11 col-12">
-                        <div class="media-content">
-                            <img class="w-100" src="assets/events/2024/impact.gif" alt="Impact 2024">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section id="articles" class="">
             <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-10 col-12">
                         <div class="title text-center mb-3 mb-md-4">
                             <!-- <h5 class="text-uppercase m-0">Times Now Summit 2024</h5> -->
-                            <h2 class="text-red">Articles</h2>
+                            <h2 class="text-red">In The News</h2>
                         </div>
                     </div>
                 </div>
                 <script id="template" type="text/template">
                     <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                         <div class="card bg-transparent text-white mb-3 border-0">
-                            <div class="p-0">
+                            <a href="https://www.timesnownews.com/{{link}}" target="_blank" class="p-0">
                                 <div class="gallery-thumb mb-2">
                                     <img src="https://static.tnn.in/thumb/msid-{{msid}},width-450,height-250,false/{{msid}}.jpg" alt="{{title}}" class="image w-100">
                                 </div>
                                 <div class="py-3">
                                     <p class="gallery_title m-0">{{title}}</p>
-                                    <a href="https://www.timesnownews.com/{{link}}" class="btn btn-sm btn-text-theme-blue br-0" target="_blank">Read More&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="https://www.timesnownews.com/{{link}}" target="_blank" class="btn btn-sm btn-text-theme-blue br-0">Read More&nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </script>
@@ -1042,13 +1025,30 @@
                                 var html = itemTemplate
                                     .replace(/{{title}}/g, item.title) // Replace {{title}} with actual title
                                     .replace(/{{msid}}/g, item.msid) // Replace {{description}} with actual description
-                                    .replace(/{{link}}/g, item.storyUrl); // Replace {{description}} with actual description
+                                    .replace(/{{link}}/g, item.overridelink); // Replace {{description}} with actual description
                                 $("#articles .wrapper").append(html);
 
                             });
                         }
                     })
                 </script>
+            </div>
+        </section>
+        <section id="impact" class="">
+            <div class="container-lg">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-12">
+                        <div class="title text-center mb-3 mb-md-4">
+                            <!-- <h5 class="text-uppercase m-0">Times Now Summit 2024</h5> -->
+                            <h2 class="text-red">Impact</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-lg-8 col-md-11 col-12">
+                        <div class="media-content">
+                            <img class="w-100" src="assets/events/2024/impact.gif" alt="Impact 2024">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <script>

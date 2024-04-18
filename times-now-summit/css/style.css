@@ -578,8 +578,10 @@ section#speakers {
 .gallery_title {
   font-size: 0.9rem;
   width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 

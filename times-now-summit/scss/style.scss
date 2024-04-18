@@ -86,11 +86,11 @@ $red-01: #e0302e;
   }
 }
 
-.btn-text-theme-blue{
+.btn-text-theme-blue {
   background-color: transparent;
   color: #efefef;
   border-bottom: 1px solid $blue-02;
-  &:hover{
+  &:hover {
     border-bottom: 2px solid $blue-02;
   }
 }
@@ -641,18 +641,20 @@ section {
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0 0 0 6px $blue-01, 0 0 0 9px #cfcfcf;
-  img{
+  img {
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
 }
-.gallery_title{
+.gallery_title {
   font-size: 0.9rem;
   width: 100%;
-  overflow: hidden;
-  white-space: nowrap; 
-  text-overflow: ellipsis;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 .gallery {
   a {
